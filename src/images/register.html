@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/commom.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="js/lib/verify-master/css/verify.css">
+    <!--<script src="js/lib/jquery-1.11.1.min.js"></script>-->
+    <!--<script src="js/lib/verify-master/js/verify.js"></script>-->
+    <script src="js/lib/require.js" data-main="js/register"></script>
+    <!--<script src="lib/jquery.validate.js"></script>-->
+    <!--<script src="lib/localization/messages_zh.js"></script>-->
+    <!--<script src="lib/additional-methods.js"></script>-->
+    <!--<script src="js/register.js"></script>-->
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="logo">
+            <h2><a href="index.html"><img src="images/logo.png" alt="logo"></a></h2>
+            <p><a href="index.html">中关村在线旗下网上商城</a></p>
+        </div>
+        <div class="header_message">
+            已经有Z商城账号？<a href="login.html">立即登录</a>
+        </div>
+    </div>
+</div>
+<div class="reg_wrapper">
+    <div class="container">
+        <div class="reg_header">
+            30秒快速注册，加入Z商城
+        </div>
+        <div class="reg">
+            <form action="">
+                <div class="reg_tab">
+                    <ul>
+                        <li class="current">
+                            <span>用手机号注册</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reg_content">
+                    <div class="reg_form">
+                        <div class="flag">
+                            <em>*</em>
+                            手机号：
+                        </div>
+                        <div class="info">
+                            <input type="text" name="uname" id="uname">
+                            <!--<i class="msg"></i>-->
+                            <div class="tips">请填写手机号码</div>
+                        </div>
+                    </div>
+                    <div class="reg_form">
+                        <div class="flag">
+                            <em>*</em>
+                            验证码：
+                        </div>
+                        <div id="verify_box">
+                            <div id="verify_xbox">
+                                <div id="btn">
+                                    <img src="images/lllllll.png" />
+                                </div>
+                            </div>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;按住滑块，拖动到最右边
+                        </div>
+                        <!--<div class="info" id="ucode">-->
+                        <!--</div>-->
+                    </div>
+                    <div class="reg_form">
+                        <div class="flag">
+                            <em>*</em>
+                            密码：
+                        </div>
+                        <div class="info">
+                            <input type="text" name="upwd" id="upwd">
+                            <!--<i class="msg"></i>-->
+                            <div class="tips">6-16位字母和数字的组合，不可用特殊字符</div>
+                        </div>
+                    </div>
+                    <div class="reg_form">
+                        <div class="flag">
+                            <em>*</em>
+                            确认密码：
+                        </div>
+                        <div class="info">
+                            <input type="text" name="upwd2" id="upwd2">
+                            <!--<i class="msg"></i>-->
+                            <div class="tips">再次输入密码</div>
+                        </div>
+                    </div>
+                    <div class="agreement">
+                        <span>
+                            <input type="checkbox" name="agree" id="agree">同意
+                            <a href="#" target="_blank">《商城用户协议》</a>
+                            <a href="#" target="_blank">《隐私权说明》</a>
+                        </span>
+
+                    </div>
+                    <button id="regBtn">立即注册</button>
+                </div>
+            </form>
+        </div>
+        <div class="fast_login">
+            <p>如果您已经注册，请<a href="login.html">直接登录</a>或者用以下方式登录：</p>
+            <div class="fast_login_list">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="reg_footer">
+    <div class="container">
+        <div class="reg_about">
+            <a href="#">关于Z商城</a>|
+            <a href="#">联系我们</a>|
+            <a href="#">帮助中心</a>
+        </div>
+        <div class="reg_copyright">
+            &copy;2019. 中关村在线 版权所有
+        </div>
+    </div>
+</div>
+</body>
+</html>

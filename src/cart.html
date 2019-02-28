@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/lib/require.js" data-main="js/cart"></script>
+    <!--<script src="lib/jquery-1.11.1.min.js"></script>-->
+    <!--<script src="js/showUname.js"></script>-->
+    <!--<script src="js/cart.js"></script>-->
+</head>
+<body>
+<div class="topbar">
+    <div class="container">
+        <div class="zol_login_info">
+            <div class="zol_home">
+                <a href="index.html">商城首页</a>
+            </div>
+            <div class="zol_login">
+                Hi~欢迎来到Z商城，请<a href="login.html">登录</a>
+                <a href="register.html">免费注册</a>
+            </div>
+        </div>
+        <div class="topbar_list">
+            <ul>
+                <li class="topbar_list_commom">
+                    <a href="#">我的订单</a>
+                </li>
+                <li class="buyercenter">
+                    <a href="#" class="topbar_list_hd">买家中心</a>
+                    <i class="icon_arrow"></i>
+                    <div class="buyerlist">
+                        <a href="#">关注店铺<span>10</span></a>
+                        <a href="#">关注商品<span>20</span></a>
+                    </div>
+                </li>
+                <li class="topbar_list_commom">
+                    <a href="#" id="cart_num">购物车<em class="cartnum">0</em>件</a>
+                </li>
+                <li class="topbar_list_commom"><a href="#">帮助中心</a></li>
+                <li>|</li>
+                <li class="phone_shop">
+                    <a href="#" class="topbar_list_hd icon_phone">手机商城</a>
+                    <i class="icon_arrow icon_arrow_phone"></i>
+                    <div class="codeshow">
+                        <img src="images/shop_wechat.png" alt="">
+                    </div>
+                </li>
+                <li class="topbar_list_commom"><a href="#">中关村在线</a></li>
+                <li class="topbar_list_commom"><a href="#">招商合作</a></li>
+                <li class="contactus">
+                    <a href="#" class="topbar_list_hd">联系客服</a>
+                    <i class="icon_arrow"></i>
+                    <div class="contact_phone">
+                        400-688-1999
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="z-header">
+    <div class="container">
+        <div class="logo">
+            <h2><a href="index.html"><img src="images/logo.png" alt=""></a></h2>
+        </div>
+        <div class="flow-step">
+            <ul>
+                <li class="step1">加入购物车</li>
+                <li class="step2">下订单</li>
+                <li class="step3">去付款</li>
+                <li class="step4">确认收货</li>
+                <li class="step5">评价</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="cart">
+    <div class="container">
+        <form action="">
+            <!--<input type="hidden" name="buyType" value="2"/>-->
+            <div class="cart-state mt">
+                <p>购物车状态(<em class="cartnum">0</em>/30)</p>
+                <div class="total"><input name="submitCart" type="submit" value="去结算"><span>总计（不含运费）：<em>&yen;</em><em class="total-cart-price">0</em></span></div>
+            </div>
+            <div class="order-table mt20">
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <th class="th-1">
+                                <input type="checkbox" id="allCbk" style="margin-left: 12px">
+                            </th>
+                            <th class="th-2">所选商品</th>
+                            <th class="th-3">单价（元）</th>
+                            <th class="th-4">数量</th>
+                            <th class="th-5">优惠</th>
+                            <th class="th-6">小计（元）</th>
+                            <th class="th-7">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tab">
+                        <!--<tr id="merchant_194784">-->
+                            <!--<td colspan="7" class=" store-infor">-->
+                                <!--<div class="shopname">-->
+                                    <!--<input name="merchantId[]" type="radio" rel="forshop" value="194784" checked>店铺：-->
+                                    <!--<a href="#" target="_blank">汇通数码风暴专营店</a>                                        </div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr rel="goods-order"  id="cart_2963770" istuan='0'>-->
+                            <!--<td colspan="2" class="s-infor clear">-->
+                                <!--<input name="cartId[]" type="checkbox" value="2963770" item="item" rel="foritem" merchantId="194784" checked>-->
+                                <!--&lt;!&ndash;新增对购物车已下架商品&ndash;&gt;-->
+                                <!--<a href="#" class="pic">-->
+                                    <!--<img src="https://mercrt-fd.zol-img.com.cn/t_s80x80/g5/M00/02/06/ChMkJ1uZ6u2IUbD_AAG1wzEB1BIAArqfAEv_TUAAbXb506.jpg" alt="">-->
+                                <!--</a>-->
+                                <!--<div class="inforbox">-->
+                                    <!--<h3 class="tit"><a href="http://www.zol.com/detail/cell_phone/apple/31733684.html" title="【顺丰包邮】苹果 iPhone XS（全网通） 全网通4G" target="_blank">【顺丰包邮】苹果 iPhone XS（全网通） 全网通4G</a></h3>-->
+
+                                    <!--<p>颜色：金色行货256GB</p>-->
+                                    <!--<div class="info-con">-->
+                                        <!--<span>套装：官方标配</span>-->
+                                    <!--</div>-->
+
+                                <!--</div>-->
+                            <!--</td>-->
+                            <!--<td class="s-price ">-->
+                                <!--<em>9299</em>-->
+                            <!--</td>-->
+                            <!--<td class="s-amount ">-->
+                                <!--<div class="buy-num">-->
+                                    <!--<a class="minus" href="javascript:void(0)" title="减一" onClick="$.updateCartnumber({cartId:'2963770', maxNumber:'50', updateType:'minus', costNumber:'1', merchantId:'194784'})">-</a>-->
+                                    <!--<input type="text" autocomplete="off" class="text-amount" value="1" onBlur="$.updateCartnumber({cartId:'2963770', maxNumber:'50',updateType:'change', costNumber:'1', merchantId:'194784'})" id="cartNumber_2963770">-->
+                                    <!--<a class="plus" href="javascript:void(0)" title="加一" onClick="$.updateCartnumber({cartId:'2963770', maxNumber:'50',updateType:'plus', costNumber:'1', merchantId:'194784'})">+</a>-->
+                                    <!--<div class="tips-2" id="tips_2963770" style="display:none;"></div>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                            <!--<td class="s-agio">-->
+                                <!--<div>&minus;&minus;</div>-->
+                            <!--</td>-->
+                            <!--<td class="s-total">-->
+                                <!--<em id="cartGoodsPcie_2963770">9299</em>-->
+                            <!--</td>-->
+                            <!--<td class="s-del">-->
+                                <!--<div class="s-delbox">-->
+                                    <!--<a href="javascript:void(0)" title="移入收藏夹" onclick="$.deleteCart({cartId:'2963770', deleteType:'collect'})">移入收藏夹</a>-->
+                                    <!--<a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2963770'})">删除</a>-->
+                                    <!--<div class="deletebox" style="display:none;" id="zp-cart-2963770">-->
+                                        <!--<p>确认要删除该商品吗？</p>-->
+                                        <!--<a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2963770', deleteType:'delete'})">是的</a><a href="javascript:void(0)" onclick="$.closeDeleteCart({cartId:'2963770'})">取消</a> <i></i>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr rel="goods-order"  id="cart_2963763" istuan='0'>-->
+                            <!--<td colspan="2" class="s-infor">-->
+                                <!--<input name="cartId[]" type="checkbox" value="2963763" item="item" rel="foritem" merchantId="194784" checked>-->
+                                <!--<a href="http://www.zol.com/detail/tablepc/apple/30010571.html" class="pic" target="_blank"><img width="80" height="80" src="https://mercrt-fd.zol-img.com.cn/t_s80x80/g5/M00/08/08/ChMkJllm7ZyINutBAARdL_VHxloAAedaAKn6AAABF1H420.jpg" alt="苹果 10.5英寸iPad Pro 平板电脑（64G WLAN版/A10X芯片/Retina屏）"></a>-->
+                                <!--<div class="inforbox">-->
+                                    <!--<h3 class="tit"><a href="http://www.zol.com/detail/tablepc/apple/30010571.html" title="苹果 10.5英寸iPad Pro 平板电脑（64G WLAN版/A10X芯片/Retina屏）" target="_blank">苹果 10.5英寸iPad Pro 平板电脑（64G WLAN版/A10X芯片/Retina屏）</a></h3>-->
+                                    <!--<p>颜色：金色</p>-->
+                                    <!--<div class="info-con">-->
+                                        <!--<span>套装：官方标配</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                            <!--<td class="s-price ">-->
+                                <!--<em>4399</em>-->
+                            <!--</td>-->
+                            <!--<td class="s-amount ">-->
+                                <!--<div class="buy-num">-->
+                                    <!--<a class="minus" href="javascript:void(0)" title="减一" onClick="$.updateCartnumber({cartId:'2963763', maxNumber:'10', updateType:'minus', costNumber:'1', merchantId:'194784'})">-</a>-->
+                                    <!--<input type="text" autocomplete="off" class="text-amount" value="1" onBlur="$.updateCartnumber({cartId:'2963763', maxNumber:'10',updateType:'change', costNumber:'1', merchantId:'194784'})" id="cartNumber_2963763">-->
+                                    <!--<a class="plus" href="javascript:void(0)" title="加一" onClick="$.updateCartnumber({cartId:'2963763', maxNumber:'10',updateType:'plus', costNumber:'1', merchantId:'194784'})">+</a>-->
+                                    <!--<div class="tips-2" id="tips_2963763" style="display:none;"></div>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                            <!--<td class="s-agio">-->
+                                <!--<div>&minus;&minus;</div>-->
+                            <!--</td>-->
+                            <!--<td class="s-total">-->
+                                <!--<em id="cartGoodsPcie_2963763">4399</em>-->
+                            <!--</td>-->
+                            <!--<td class="s-del">-->
+                                <!--<div class="s-delbox">-->
+                                    <!--<a href="javascript:void(0)" title="移入收藏夹" onclick="$.deleteCart({cartId:'2963763', deleteType:'collect'})">移入收藏夹</a>-->
+                                    <!--<a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2963763'})">删除</a>-->
+                                    <!--<div class="deletebox" style="display:none;" id="zp-cart-2963763">-->
+                                        <!--<p>确认要删除该商品吗？</p>-->
+                                        <!--<a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2963763', deleteType:'delete'})">是的</a><a href="javascript:void(0)" onclick="$.closeDeleteCart({cartId:'2963763'})">取消</a> <i></i>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr id="merchant_195010">-->
+                            <!--<td colspan="7" class=" store-infor clearfix">-->
+                                <!--<div class="shopname">-->
+                                    <!--<input name="merchantId[]" type="radio" rel="forshop" value="195010" checked>店铺：-->
+                                    <!--<a href="http://www.zol.com/shop_195010/" target="_blank">环宇荣合专营店</a>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr rel="goods-order"  id="cart_2963762" istuan='0'>-->
+                            <!--<td colspan="2" class="s-infor">-->
+                                <!--<input name="cartId[]" type="checkbox" value="2963762" item="item" rel="foritem" merchantId="195010" checked>-->
+                                <!--<a href="http://www.zol.com/detail/cell_phone/huawei/30965713.html" class="pic" target="_blank"><img width="80" height="80" src="https://mercrt-fd.zol-img.com.cn/t_s80x80/g5/M00/05/0E/ChMkJlt9I5WIalRUAAISIoHjc2UAArH-gKnLn4AAhI6386.jpg" alt="【现货包邮送壳膜】华为 nova 3e 4+64/128G 全网通版 全面屏 nova3e"></a>-->
+                                <!--<div class="inforbox">-->
+                                    <!--<h3 class="tit"><a href="http://www.zol.com/detail/cell_phone/huawei/30965713.html" title="【现货包邮送壳膜】华为 nova 3e 4+64/128G 全网通版 全面屏 nova3e" target="_blank">【现货包邮送壳膜】华为 nova 3e 4+64/128G 全网通版 全面屏 nova3e</a></h3>-->
+                                    <!--<p>颜色：全网通 铂光金行货64GB</p>-->
+                                    <!--<div class="info-con">-->
+                                        <!--<span>套装：官方标配</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                            <!--<td class="s-price ">-->
+                                <!--<em>1559</em>-->
+                            <!--</td>-->
+                            <!--<td class="s-amount ">-->
+                                <!--<div class="buy-num">-->
+                                    <!--<a class="minus" href="javascript:void(0)" title="减一" onClick="$.updateCartnumber({cartId:'2963762', maxNumber:'17', updateType:'minus', costNumber:'1', merchantId:'195010'})">-</a>-->
+                                    <!--<input type="text" autocomplete="off" class="text-amount" value="1" onBlur="$.updateCartnumber({cartId:'2963762', maxNumber:'17',updateType:'change', costNumber:'1', merchantId:'195010'})" id="cartNumber_2963762">-->
+                                    <!--<a class="plus" href="javascript:void(0)" title="加一" onClick="$.updateCartnumber({cartId:'2963762', maxNumber:'17',updateType:'plus', costNumber:'1', merchantId:'195010'})">+</a>-->
+                                    <!--<div class="tips-2" id="tips_2963762" style="display:none;"></div>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                            <!--<td class="s-agio">-->
+                                <!--<div>&minus;&minus;</div>-->
+                            <!--</td>-->
+                            <!--<td class="s-total">-->
+                                <!--<em id="cartGoodsPcie_2963762">1559</em>-->
+                            <!--</td>-->
+                            <!--<td class="s-del">-->
+                                <!--<div class="s-delbox">-->
+                                    <!--<a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2963762'})">删除</a>-->
+                                    <!--<div class="deletebox" id="zp-cart-2963762">-->
+                                        <!--<p>确认要删除该商品吗？</p>-->
+                                        <!--<a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2963762', deleteType:'delete'})">是的</a><a href="javascript:void(0)" onclick="$.closeDeleteCart({cartId:'2963762'})">取消</a> <i></i>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+                <div class="total-price">商品总价
+                    <span>（不含运费）</span>：
+                    <em>&yen;</em>
+                    <em class="total-cart-price">0</em>
+                </div>
+                <div class="order-foot clearfix">
+                    <label>
+                        <a href="#" id="volumeDelete">批量删除</a>
+                        <a href="index.html" class="go-shopping">&lt;&lt;继续购物</a>
+                        <input type="submit" value="去结算" name="submitCart" class="accounting-btn">
+                    </label>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<div class="z-footer">
+    <p class="links">
+        <a href="#">关于商城</a>|
+        <a href="#">营销中心</a>|
+        <a href="#">服务中心</a>|
+        <a href="#">联系我们</a>|
+        <a href="#">发展历程</a>|
+        <a href="#">媒体报道</a>
+    </p>
+    <p>
+        <span class="copyright">&copy;中关村在线 版权所有. 京ICP备09041801号-182
+            <a href="#">京ICP证010391号</a>
+        </span>
+    </p>
+    <div class="authentication">
+        <a href="#"><img width="108" height="40" alt="经营性网站备案信息" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/beian.png"></a>
+        <a href="#"><img width="108" height="40" alt="海淀网络警察提醒您" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/jingcha.png"></a>
+    </div>
+</div>
+</body>
+</html>

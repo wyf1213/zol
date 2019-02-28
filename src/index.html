@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/lib/require.js" data-main="js/index"></script>
+    <!--<script src="lib/jquery-1.11.1.min.js"></script>-->
+    <!--<script src="js/showUname.js"></script>-->
+    <!--<script src="js/index.js"></script>-->
+    <!--<script src="js/backtotop.js"></script>-->
+</head>
+<body>
+<div class="topbar">
+    <div class="container">
+        <div class="zol_login_info">
+            <div class="zol_home">
+                <a href="index.html">商城首页</a>
+            </div>
+            <div class="zol_login">
+                Hi~欢迎来到Z商城，请<a href="login.html">登录</a>
+                <a href="register.html">免费注册</a>
+            </div>
+        </div>
+        <div class="topbar_list">
+            <ul>
+                <li class="topbar_list_commom">
+                    <a href="#">我的订单</a>
+                </li>
+                <li class="buyercenter">
+                    <a href="#" class="topbar_list_hd">买家中心</a>
+                    <i class="icon_arrow"></i>
+                    <div class="buyerlist">
+                        <a href="#">关注店铺<span>10</span></a>
+                        <a href="#">关注商品<span>20</span></a>
+                    </div>
+                </li>
+                <li class="topbar_list_commom">
+                    <a href="cart.html" id="cart_num">购物车<em class="cartnum">0</em>件</a>
+                </li>
+                <li class="topbar_list_commom"><a href="#">帮助中心</a></li>
+                <li>|</li>
+                <li class="phone_shop">
+                    <a href="#" class="topbar_list_hd icon_phone">手机商城</a>
+                    <i class="icon_arrow icon_arrow_phone"></i>
+                    <div class="codeshow">
+                        <img src="images/shop_wechat.png" alt="">
+                    </div>
+                </li>
+                <li class="topbar_list_commom"><a href="#">中关村在线</a></li>
+                <li class="topbar_list_commom"><a href="#">招商合作</a></li>
+                <li class="contactus">
+                    <a href="#" class="topbar_list_hd">联系客服</a>
+                    <i class="icon_arrow"></i>
+                    <div class="contact_phone">
+                        400-688-1999
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container">
+        <h2><a href="index.html"><img src="images/logo.png" alt=""></a></h2>
+        <div class="header_city">
+            <span>全国<i class="icon_arrow"></i></span>
+            <ul>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">成都</a></li>
+                <li><a href="#">青岛</a></li>
+                <li><a href="#">西安</a></li>
+                <li><a href="#">郑州</a></li>
+                <li><a href="#">石家庄</a></li>
+                <li><a href="#">平顶山</a></li>
+                <li><a href="#">上海</a></li>
+                <li><a href="#">德阳</a></li>
+                <li><a href="#">邢台</a></li>
+                <li><a href="#">承德</a></li>
+                <li><a href="#">驻马店</a></li>
+                <li><a href="#">安阳</a></li>
+                <li><a href="#">新乡</a></li>
+                <li><a href="#">宝鸡</a></li>
+                <li class="city_btn"><a href="#">全国</a></li>
+            </ul>
+        </div>
+        <form action="">
+            <div class="header_search">
+                <input type="text" placeholder="找找您想要的商品">
+                <input type="submit" value="搜索">
+                <div class="search_keywords">
+                    <a href="#">戴尔限时促销</a>
+                    <a href="#">三星Note8</a>
+                </div>
+            </div>
+        </form>
+        <div class="header_list">
+            <a href="#" class="myorder">我的订单<i class="icon_img"></i></a>
+            <a href="#" class="mydiscount">我的优惠券<i class="icon_img"></i></a>
+            <a href="cart.html" class="mycart">购物车<i class="icon_img"></i><em class="cartnum">0</em></a>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="container">
+        <ul>
+            <li class="current"><a href="index.html">首页</a></li>
+            <li><a href="#">团购</a></li>
+            <li><a href="#">电子竞技</a></li>
+            <li><a href="#">本地优选</a></li>
+            <li><a href="#">家电优选</a></li>
+        </ul>
+        <div class="category">
+            <div class="category_header">
+                全部分类<i class="icon_cate"></i>
+            </div>
+            <div class="category_body">
+                <div class="category_item">
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">手机</a><i></i>
+                        </h3>
+                        <i class="icon_phone"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">电脑</a><i></i>
+                        </h3>
+                        <i class="icon_com"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">DIY</a><i></i>
+                        </h3>
+                        <i class="icon_diy"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">数码</a><i></i>
+                        </h3>
+                        <i class="icon_cam"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">外设</a><i></i>
+                        </h3>
+                        <i class="icon_outer"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">智能</a><i></i>
+                        </h3>
+                        <i class="icon_ai"></i>
+                    </div>
+                </div>
+                <ul class="category_content">
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">手机</a>
+                            <a href="#">移动电源</a>
+                            <a href="#">蓝牙耳机</a>
+                            <a href="#">手机贴膜</a>
+                            <a href="#">保护套</a>
+                            <a href="#">数据线</a>
+                            <a href="#">充电器</a>
+                            <a href="#">手机维修</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic1.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">笔记本电脑</a>
+                            <a href="#">游戏本</a>
+                            <a href="#">超极本</a>
+                            <a href="#">二合一平板电脑</a>
+                            <a href="#">平板电脑</a>
+                            <a href="#">品牌整机</a>
+                            <a href="#">一体机</a>
+                            <a href="#">笔记本配件</a>
+                            <a href="#">笔记本电池</a>
+                            <a href="#">笔记本包</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic2.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">DIY主机</a>
+                            <a href="#">团购钜惠</a>
+                            <a href="#">硬盘</a>
+                            <a href="#">电源</a>
+                            <a href="#">散热器</a>
+                            <a href="#">CPU</a>
+                            <a href="#">机箱</a>
+                            <a href="#">主板</a>
+                            <a href="#">内存</a>
+                            <a href="#">固态硬盘</a>
+                            <a href="#">显卡</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic3.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">数码相机</a>
+                            <a href="#">摄像机</a>
+                            <a href="#">相机镜头</a>
+                            <a href="#">相机电池</a>
+                            <a href="#">闪光灯</a>
+                            <a href="#">滤镜</a>
+                            <a href="#">电子教育</a>
+                            <a href="#">相机遥控器</a>
+                            <a href="#">拍立得</a>
+                            <a href="#">相机包</a>
+                            <a href="#">闪存卡</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic4.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">键盘</a>
+                            <a href="#">鼠标</a>
+                            <a href="#">鼠标套装</a>
+                            <a href="#">鼠标垫</a>
+                            <a href="#">耳机</a>
+                            <a href="#">音箱</a>
+                            <a href="#">投影仪</a>
+                            <a href="#">录音笔</a>
+                            <a href="#">路由器</a>
+                            <a href="#">移动硬盘</a>
+                            <a href="#">U盘</a>
+                            <a href="#">摄像头</a>
+                            <a href="#">手柄</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic5.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">智能手环</a>
+                            <a href="#">智能手表</a>
+                            <a href="#">VR眼镜</a>
+                            <a href="#">健康检测</a>
+                            <a href="#">智能机器人</a>
+                            <a href="#">智能电子秤</a>
+                            <a href="#">智能灯</a>
+                            <a href="#">智能投影</a>
+                            <a href="#">HTC VIVE</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic6.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="#"><img src="images/banner1.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/banner2.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/banner3.jpg" alt=""></a>
+            </li>
+        </ul>
+        <ol>
+            <li class="current"><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ol>
+        <div id="pre" class="arrow"></div>
+        <div id="next" class="arrow"></div>
+    </div>
+</div>
+<div class="main">
+    <!--领券中心-->
+    <div class="discount">
+        <div class="container">
+            <ul>
+                <li class="discount_all">
+                    <i class="discount_icon"></i>
+                    <h4>领券中心</h4>
+                    <p>COUPON</p>
+                    <div>
+                        <a href="#">去看看&nbsp;<span>&gt;&gt;</span></a>
+                    </div>
+                </li>
+                <li class="discount_details">
+                    <i class="discount_icon"></i>
+                    <div class="discount_info">
+                        <div class="discount_price">&yen;10</div>
+                        <div class="discount_name">
+                            <h5>环宇荣合专营店</h5>
+                            <p>满3999可用</p>
+                        </div>
+                    </div>
+                    <div class="go_and_get">
+                        <a href="#">立即领取&nbsp;<span>&gt;&gt;</span></a>
+                    </div>
+                </li>
+                <li class="discount_details">
+                    <i class="discount_icon"></i>
+                    <div class="discount_info">
+                        <div class="discount_price">&yen;5</div>
+                        <div class="discount_name">
+                            <h5>环宇荣合专营店</h5>
+                            <p>满1999可用</p>
+                        </div>
+                    </div>
+                    <div class="go_and_get">
+                        <a href="#">立即领取&nbsp;<span>&gt;&gt;</span></a>
+                    </div>
+                </li>
+                <li class="discount_details">
+                    <i class="discount_icon"></i>
+                    <div class="discount_info">
+                        <div class="discount_price">&yen;3</div>
+                        <div class="discount_name">
+                            <h5>环宇荣合专营店</h5>
+                            <p>满999可用</p>
+                        </div>
+                    </div>
+                    <div class="go_and_get">
+                        <a href="#">立即领取&nbsp;<span>&gt;&gt;</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Z智选-->
+    <div class="product">
+        <div class="product_header">
+            <h3>Z智选</h3>
+        </div>
+        <div class="product_inner">
+            <div class="product_inner_info">
+                <div class="product_focus">
+                    <ul class="product_focus_tab">
+                        <li rel="product_focus_pic1" class="active">影音</li>
+                        <li rel="product_focus_pic2">穿戴</li>
+                        <li rel="product_focus_pic3">家居</li>
+                        <li rel="product_focus_pic4">出行</li>
+                        <li rel="product_focus_pic5">美护</li>
+                    </ul>
+                    <ul class="product_focus_slide_list">
+                        <li id="product_focus_pic1">
+                            <a href="#" target="_blank"><img src="images/pro1.jpg" /></a>
+                        </li>
+                        <li id="product_focus_pic2">
+                            <a href="#" target="_blank"><img src="images/pro2.jpg" /></a>
+                        </li>
+                        <li id="product_focus_pic3">
+                            <a href="#" target="_blank"><img src="images/pro3.jpg" /></a>
+                        </li>
+                        <li id="product_focus_pic4">
+                            <a href="#" target="_blank"><img src="images/pro4.jpg" /></a>
+                        </li>
+                        <li id="product_focus_pic5">
+                            <a href="#" target="_blank"><img src="images/pro5.jpg" alt="乐心" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product_pics">
+                    <a href="#" target="_blank"><img src="images/pro6.jpg" alt="DIY主机" /></a>
+                    <a href="#" target="_blank"><img src="images/pro7.jpg" alt="外设" /></a>
+                </div>
+            </div>
+            <div class="product_inner_info">
+                <ul class="product_pro-list">
+                    <li>
+                        <img src="images/pro8.jpg" alt="漫步者R102V音箱" />
+                        <div class="product_pro_mark">
+                            <div class="product_pro_name">漫步者R102V音箱</div>
+                            <div class="product_pro_price">&yen;159</div>
+                            <div class="product_pro_btn"><a href="#" target="_blank">查看详情</a></div>
+                            <div class="product_pro_else">
+                                <a href="#">评测</a>
+                                <a href="#">视频</a>
+                                <a href="#">点评</a>
+                            </div>
+                            <div class="product_pro_referprice">电商参考价：&yen;暂无</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/pro9.jpg" alt="浩酷M1带麦耳机" />
+                        <div class="product_pro_mark">
+                            <div class="product_pro_name">浩酷M1带麦耳机</div>
+                            <div class="product_pro_price">&yen;31</div>
+                            <div class="product_pro_btn"><a href="http://www.zol.com/detail/microphone/HOCO/30137470.html?skuId=11284119&spm=2043.46260" target="_blank">查看详情</a></div>
+                            <div class="product_pro_else">
+                                <a href="#">评测</a>
+                                <a href="#">视频</a>
+                                <a href="#">点评</a>
+                            </div>
+                            <div class="product_pro_referprice">电商参考价：&yen;暂无</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/pro10.jpg" alt="小米10000毫安移动电源" />
+                        <div class="product_pro_mark">
+                            <div class="product_pro_name">小米10000毫安移动电源</div>
+                            <div class="product_pro_price">&yen;99</div>
+                            <div class="product_pro_btn"><a href="http://www.zol.com/detail/pocketpower/xiaomi/28699673.html?skuId=8610132&suitId=8610132&spm=2043.46259" target="_blank">查看详情</a></div>
+                            <div class="product_pro_else">
+                                <a href="#">评测</a>
+                                <a href="#">视频</a>
+                                <a href="#">点评</a>
+                            </div>
+                            <div class="product_pro_referprice">电商参考价：&yen;79.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/pro11.jpg" alt="三星S8原装耳机" />
+                        <div class="product_pro_mark">
+                            <div class="product_pro_name">三星S8原装耳机</div>
+                            <div class="product_pro_price">&yen;109</div>
+                            <div class="product_pro_btn"><a href="http://www.zol.com/detail/microphone/samsung/30181219.html?skuId=12477335&spm=921" target="_blank">查看详情</a></div>
+                            <div class="product_pro_else">
+                                <a href="#">评测</a>
+                                <a href="#">视频</a>
+                                <a href="#">点评</a>
+                            </div>
+                            <div class="product_pro_referaoprice">电商参考价：&yen;暂无</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="product_pics lastImg">
+                    <a href="#" target="_blank"><img src="images/pro12.jpg" alt="显卡" /></a>
+                </div>
+            </div>
+            <div class="product_banner">
+                <a href="#" target="_blank"><img src="images/pro13.jpg" alt="手环" /></a>
+                <a href="#" target="_blank"><img src="images/pro14.jpg" alt="充电宝" /></a>
+            </div>
+        </div>
+    </div>
+    <!--品牌精选-->
+    <div class="brand">
+        <div class="brand_header">
+            <h3>品牌精选</h3>
+            <span class="brand_header_tip">大牌、保障、服务赞</span>
+        </div>
+        <div class="brand_choice">
+            <ul class="brand_choice_list">
+                <li class="brand_first">
+                    <a href="#" target="_blank" class="brand_pic">
+                        <img src="images/brand1.jpg" alt="" width="230" height="340">
+                    </a>
+                </li>
+                <li class="brand_item">
+                    <a href="#" target="_blank" class="brand_pic">
+                        <img src="images/brand2.jpg" alt="" width="200" height="200">
+                    </a>
+                    <p class="brand_warename">
+                        <a href="#" target="_blank">王俊凯 戴尔DELL游匣G3</a>
+                    </p>
+                    <p class="brand_wareprice">RMB <span class="brand_price">7,499</span></p>
+                </li>
+                <li class="brand_item">
+                    <a href="#" target="_blank" class="brand_pic">
+                        <img src="images/brand3.jpg" alt="" width="200" height="200">
+                    </a>
+                    <p class="brand_warename">
+                        <a href="#" target="_blank">王俊凯戴尔DELL游匣G7</a>
+                    </p>
+                    <p class="brand_wareprice">RMB <span class="brand_price">9,999</span></p>
+                </li>
+                <li class="brand_item">
+                    <a href="#" target="_blank" class="brand_pic">
+                        <img src="images/brand4.jpg" alt="" width="200" height="200">
+                    </a>
+                    <p class="brand_warename">
+                        <a href="#" target="_blank">王俊凯戴尔 游匣G3</a>
+                    </p>
+                    <p class="brand_wareprice">RMB <span class="brand_price">9,999</span></p>
+                </li>
+                <li class="brand_item">
+                    <a href="#" target="_blank" class="brand_pic">
+                        <img src="images/brand5.jpg" alt="" width="200" height="200">
+                    </a>
+                    <p class="brand_warename">
+                        <a href="#" target="_blank">王俊凯 戴尔游匣 G7</a>
+                    </p>
+                    <p class="brand_wareprice">RMB <span class="brand_price">11,999</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--本周热销-->
+    <div class="hot clear">
+        <div class="hot_header clear">
+            <span>本周热销</span>
+        </div>
+        <ul class="hot_list" class="clear">
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_wrapper">
+        <div class="container">
+            <ul class="footer_service">
+                <li class="footer_service_bg1">
+                    <a href="#">
+                        <p class="top">先行赔付</p>
+                        <p class="below">权益受损先行赔付</p>
+                    </a>
+                </li>
+                <li class="footer_service_bg2">
+                    <a href="#">
+                        <p class="top">正品保障</p>
+                        <p class="below">正规渠道售后有保障</p>
+                    </a>
+                </li>
+                <li class="footer_service_bg3">
+                    <a href="#">
+                        <p class="top">无忧退换</p>
+                        <p class="below">严格按照消法处理</p>
+                    </a>
+                </li>
+                <li class="footer_service_bg4">
+                    <a href="#">
+                        <p class="top">发票保障</p>
+                        <p class="below">售卖商品可提供发票</p>
+                    </a>
+                </li>
+                <li class="footer_service_bg5">
+                    <a href="#">
+                        <p class="top">快递包邮</p>
+                        <p class="below">满399快递包邮</p>
+                    </a>
+                </li>
+                <li class="footer_service_b6">
+                    <a href="#">
+                        <p class="top">急速发货</p>
+                        <p class="below">24小时内发货</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer_menu">
+                <dl class="cooperation">
+                    <dt>招商合作</dt>
+                    <dd>
+                        <p>助力3C零售商互联网转型</p>
+                        <p>开启新零售时代全新旅程！</p>
+                        <a href="#"><span>查看详细</span>&gt;</a>
+                    </dd>
+                </dl>
+                <dl class="hotline">
+                    <dt>400-688-1999</dt>
+                    <dd>
+                        <p>工作日 9:00 - 18:00</p>
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="#">帐号管理</a>
+                        <a href="#">购物帮助</a>
+                        <a href="#">付款方式</a>
+
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="#">先行赔付</a>
+                        <a href="#">退款退货流程</a>
+                        <a href="#">投诉举报</a>
+                        <a href="#">退款、售后</a>
+
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>商城保障</dt>
+                    <dd>
+                        <a href="#">正品保障</a>
+                        <a href="#">物流配送</a>
+                        <a href="#">24小时发货</a>
+                        <a href="#">发票保障</a>
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>商家服务</dt>
+                    <dd>
+                        <a href="#">商家中心</a>
+
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>管理条例</dt>
+                    <dd>
+                        <a href="#">Z商城管理条例</a>
+                        <a href="#">Z商城投诉处理规范</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="footer_list">
+        <div class="container">
+            <div class="footer_nav">
+                <a href="#">中关村在线</a> |
+                <a href="#">Z商城</a> |
+                <a href="#">团购</a> |
+                <a href="#">产品报价</a> |
+                <a href="#">论坛</a> |
+                <a href="#">问答</a>
+            </div>
+            <div class="footer_copyright">
+                <a href="#">关于Z商城</a> |
+                <a href="#">帮助中心</a> |
+                <a href="#">联系我们</a> |
+                <a href="#" id="credit-icon">
+                    <img src="images/gs.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="footer_copyright" style="margin-left: -5px">
+                &copy;2019 中关村在线 版权所有.
+                <a href="#">京ICP证150096号</a>京ICP备14061128号
+                <a href="#">网络文化经营许可证京网文[2016]1631-199</a>
+            </div>
+            <div class="footer_area">
+                <div class="wechat">
+                    <img src="images/qr.png"  alt=""/>
+                </div>
+                <a href="#">关注新浪微博</a>
+            </div>
+            <a href="#">广告</a>
+        </div>
+    </div>
+</div>
+<div class="sidebar">
+    <div class="sidebar_top">
+        <ul>
+            <li class="sidebar_myorder">
+                <div class="icon_img">
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+                <div class="hiddenblock">
+                    <a href="#">我的订单</a>
+                </div>
+            </li>
+            <li class="sidebar_myfooter">
+                <div class="icon_img">
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+                <div class="hiddenblock">
+                    <a href="#">我的足迹</a>
+                </div>
+            </li>
+            <li class="sidebar_mycart">
+                <div class="icon_img">
+                    <span class="cartnum">0</span>
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+                <div class="hiddenblock">
+                    <a href="cart.html">购物车</a>
+                </div>
+            </li>
+            <li class="sidebar_mydiscount">
+                <div class="icon_img">
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+                <div class="hiddenblock">
+                    <a href="#">优惠券</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar_back">
+
+    </div>
+</div>
+</body>
+</html>

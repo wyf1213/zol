@@ -1,0 +1,429 @@
+.clear:after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+.z-header{
+    width: 100%;
+    height: 120px;
+    padding: 30px 0;
+}
+.z-header .container{
+    width: 960px;
+    margin: 0 auto;
+    height: 60px;
+}
+.z-header .logo{
+    float: left;
+}
+.z-header .flow-step{
+    float: right;
+    padding: 2px 0 0;
+}
+.z-header .flow-step li{
+    float: left;
+    width: 104px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 14px 0 0;
+    font-size: 14px;
+    text-align: center;
+    background: #e6e6e6 url(./../images/cartimgs/step-bg.png) no-repeat;
+    background-position: 100% -74px;
+}
+.z-header .flow-step li.step1{
+    background-position: 100% -37px;
+    background-color: #e02d2d;
+    color: #fff;
+    padding: 0 14px;
+}
+.z-header .flow-step li.step5{
+    background-image: none;
+}
+
+/******************商品list**************/
+.cart{
+    width: 100%;
+}
+.cart .container{
+    width: 960px;
+    margin: 0 auto;
+}
+.cart .cart-state{
+    margin-top: 10px;
+    text-align: right;
+}
+.cart .cart-state p{
+    padding: 7px 0 10px 0;
+    font-size: 12px;
+}
+.cart .cart-state p em{
+    padding: 0 0 0 10px;
+    color: #666;
+}
+.cart .cart-state .total{
+    height: 22px;
+    line-height: 22px;
+    color: #666;
+}
+.cart .cart-state input {
+    float: right;
+    width: 58px;
+    height: 22px;
+    background: url(./../images/cartimgs/pic1.png) no-repeat;
+    background-position: -192px -150px;
+    border: 0 none;
+    color: #fff;
+    line-height: 22px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart .cart-state .total span {
+    float: right;
+    padding: 0 8px 0 0;
+    line-height: 24px;
+    color: #999;
+    font-size: 12px;
+}
+.cart .cart-state .total em {
+    padding: 0 2px 0 0;
+    color: #ff0000;
+    font-weight: bold;
+    font-family: verdana;
+}
+.cart .order-table{
+    margin-top: 20px;
+}
+.order-table table{
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.order-table th{
+    height: 36px;
+    background: #f5f5f5;
+    border-top: 2px solid #e02d2d;
+    line-height: 36px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+}
+.order-table th.th-1{
+    width: 3%;
+}
+.order-table th.th-2{
+    width: 38%;
+}
+.order-table th.th-3{
+    width: 10%;
+}
+.order-table th.th-4{
+    width: 15%;
+}
+.order-table th.th-5{
+    width: 10%;
+}
+.order-table th.th-6{
+    width: 12%;
+}
+.order-table th.th-7{
+    width: 12%;
+}
+.order-table .store-infor{
+    height: 53px;
+    padding: 10px 0 0 0;
+    border: none;
+    background: #fff;
+}
+.order-table .shopname{
+    float: left;
+    line-height: 43px;
+    font-size: 12px;
+}
+.order-table .shopname input{
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 2px;
+}
+.order-table .shopname a{
+    color: #134ba0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.order-table .shopname a:hover{
+    color: #f33;
+    text-decoration: underline;
+}
+.order-table td {
+    padding: 10px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+}
+.order-table .s-infor {
+    padding: 10px 10px 10px 12px;
+    border-left: 1px solid #e3e3e3;
+}
+.s-infor input {
+    float: left;
+    margin: 24px 10px 0 0;
+}
+.s-infor .pic {
+    float: left;
+    width: 82px;
+    height: 82px;
+    border: 1px solid #ccc;
+    line-height: 58px;
+    text-align: center;
+    background: #fff;
+}
+.s-infor .pic img{
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+.s-infor>a{
+    color: #134ba0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.s-infor .inforbox {
+    float: left;
+    width: 250px;
+    padding: 0 0 0 10px;
+    line-height: 20px;
+    text-align: left;
+}
+.s-infor .inforbox .tit {
+    margin: -2px 0 4px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 12px;
+    overflow: hidden;
+}
+.s-infor .inforbox .tit a {
+    color: #134ba0;
+}
+.s-infor .inforbox .tit a:hover {
+    color: #f33;
+    text-decoration: underline;
+}
+.s-infor .inforbox p {
+    color: #666;
+    font-size: 12px;
+}
+.s-infor .info-con {
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    font-size: 12px;
+}
+/*!*价格*!*/
+.s-price {
+    font-size: 12px;
+    text-align: center;
+}
+/*!*数量*!*/
+.buy-num {
+    position: relative;
+    width: 100px;
+    padding: 0 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+.text-amount {
+    width: 30px;
+    height: 20px;
+    float: left;
+    padding: 1px 3px;
+    text-align: right;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.minus, .plus {
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    cursor: pointer;
+}
+/*!*优惠*!*/
+.s-agio {
+    font-size: 12px;
+    text-align: center;
+}
+/*小计*/
+.s-total {
+    font-size: 12px;
+    text-align: center;
+}
+.s-total em {
+    color: #ff0000;
+}
+/*操作*/
+.order-table .s-del {
+    border-right: 1px solid #e3e3e3;
+}
+.s-del a {
+    display: block;
+    line-height: 20px;
+    color: #134ba0;
+    font-size: 12px;
+}
+.s-delbox{
+    position: relative;
+}
+.deletebox {
+    width: 164px;
+    padding: 6px 10px;
+    position: absolute;
+    top: -60px;
+    left: -40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 18px;
+    color: #666;
+    font-size: 12px;
+    display: none;
+}
+.deletebox:before{
+    position: absolute;
+    content: "";
+    border-width: 8px;
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+    top: 50px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 111;
+}
+.deletebox:after{
+    position: absolute;
+    content: "";
+    border-width: 10px;
+    border-color: #ccc transparent transparent transparent;
+    border-style: solid;
+    top: 50px;
+    left: 50%;
+    margin-left: -5px;
+}
+.s-del .deletebox a {
+    margin: 0 12px;
+    display: inline-block;
+    color: #3366cc;
+    cursor: pointer;
+}
+/*商品总价*/
+.total-price {
+    padding: 0 10px 0 0;
+    height: 52px;
+    line-height: 52px;
+    text-align: right;
+    font-size: 12px;
+}
+.total-price span {
+    color: #666;
+}
+.total-price em {
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: verdana;
+}
+/*批量删除*/
+.order-foot {
+    position: relative;
+    width: 960px;
+    padding: 0 0 0 12px;
+    height: 35px;
+    border: 1px solid #e3e3e3;
+    background: #f5f5f5;
+    line-height: 33px;
+}
+.order-foot label {
+    padding: 0 25px 0 0;
+}
+.order-foot a {
+    float: left;
+    margin: 0 30px 0 0;
+    color: #134ba0;
+    font-size: 12px;
+}
+.order-foot a:hover{
+    color: #f33;
+    text-decoration: underline;
+}
+.order-foot .go-shopping {
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    margin: 0;
+    font-family: "simsun";
+}
+.order-foot .accounting-btn {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 130px;
+    height: 35px;
+    font: 18px/35px "Microsoft YaHei";
+    color: #fff;
+    border: 0 none;
+    background: url(./../images/cartimgs/pic1.png) no-repeat;
+    background-position: 0 -113px;
+    cursor: pointer;
+}
+/*z-footer*/
+.z-footer{
+    margin: 40px auto 0;
+    padding: 5px 0 20px;
+    width: 960px;
+    text-align: center;
+    border-top: 1px solid #e3e3e3;
+}
+.z-footer .links {
+    padding: 14px 0 6px;
+    color: #ccc;
+    font-size: 12px;
+}
+.z-footer .links a {
+    margin: 0 10px;
+    color: #134ba0;
+}
+.z-footer .links a:hover{
+    color: #f33;
+    text-decoration: underline;
+}
+.z-footer .copyright {
+    display: inline-block;
+    height: 23px;
+    padding-left: 28px;
+    position: relative;
+    line-height: 23px;
+    color: #333;
+    font-size: 12px;
+}
+.z-footer .copyright a{
+    color: #134ba0;
+}
+.z-footer .authentication {
+    padding-top: 12px;
+}
+.authentication a {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+

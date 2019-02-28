@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/city.css">
+    <script src="js/lib/require.js" data-main="js/details"></script>
+    <!--<script src="lib/jquery-1.11.1.min.js"></script>-->
+    <!--<script src="lib/city/Popt.js"></script>-->
+    <!--<script src="lib/city/cityJson.js"></script>-->
+    <!--<script src="lib/city/citySet.js"></script>-->
+    <!--<script src="lib/jquery.cookie.js"></script>-->
+    <!--<script src="js/backtotop.js"></script>-->
+    <!--<script src="js/showUname.js"></script>-->
+    <!--<script src="js/details.js"></script>-->
+
+</head>
+<body>
+<div class="topbar">
+    <div class="container">
+        <div class="zol_login_info">
+            <div class="zol_home">
+                <a href="index.html">商城首页</a>
+            </div>
+            <div class="zol_login">
+                Hi~欢迎来到Z商城，请<a href="login.html">登录</a>
+                <a href="register.html">免费注册</a>
+            </div>
+        </div>
+        <div class="topbar_list">
+            <ul>
+                <li class="topbar_list_commom">
+                    <a href="#">我的订单</a>
+                </li>
+                <li class="buyercenter">
+                    <a href="#" class="topbar_list_hd">买家中心</a>
+                    <i class="icon_arrow"></i>
+                    <div class="buyerlist">
+                        <a href="#">关注店铺<span>10</span></a>
+                        <a href="#">关注商品<span>20</span></a>
+                    </div>
+                </li>
+                <li class="topbar_list_commom">
+                    <a href="cart.html" id="cart_num">购物车<em class="cartnum">0</em>件</a>
+                </li>
+                <li class="topbar_list_commom"><a href="#">帮助中心</a></li>
+                <li>|</li>
+                <li class="phone_shop">
+                    <a href="#" class="topbar_list_hd icon_phone">手机商城</a>
+                    <i class="icon_arrow icon_arrow_phone"></i>
+                    <div class="codeshow">
+                        <img src="images/shop_wechat.png" alt="">
+                    </div>
+                </li>
+                <li class="topbar_list_commom"><a href="#">中关村在线</a></li>
+                <li class="topbar_list_commom"><a href="#">招商合作</a></li>
+                <li class="contactus">
+                    <a href="#" class="topbar_list_hd">联系客服</a>
+                    <i class="icon_arrow"></i>
+                    <div class="contact_phone">
+                        400-688-1999
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container">
+        <h2><a href="index.html"><img src="images/logo.png" alt=""></a></h2>
+        <div class="header_city">
+            <span>全国<i class="icon_arrow"></i></span>
+            <ul>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">成都</a></li>
+                <li><a href="#">青岛</a></li>
+                <li><a href="#">西安</a></li>
+                <li><a href="#">郑州</a></li>
+                <li><a href="#">石家庄</a></li>
+                <li><a href="#">平顶山</a></li>
+                <li><a href="#">上海</a></li>
+                <li><a href="#">德阳</a></li>
+                <li><a href="#">邢台</a></li>
+                <li><a href="#">承德</a></li>
+                <li><a href="#">驻马店</a></li>
+                <li><a href="#">安阳</a></li>
+                <li><a href="#">新乡</a></li>
+                <li><a href="#">宝鸡</a></li>
+                <li class="city_btn"><a href="#">全国</a></li>
+            </ul>
+        </div>
+        <form action="">
+            <div class="header_search">
+                <input type="text" placeholder="找找您想要的商品">
+                <input type="submit" value="搜索">
+                <div class="search_keywords">
+                    <a href="#">戴尔限时促销</a>
+                    <a href="#">三星Note8</a>
+                </div>
+            </div>
+        </form>
+        <div class="header_list">
+            <a href="#" class="myorder">我的订单<i class="icon_img"></i></a>
+            <a href="#" class="mydiscount">我的优惠券<i class="icon_img"></i></a>
+            <a href="cart.html" class="mycart">购物车<i class="icon_img"></i><em class="cartnum">0</em></a>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="container">
+        <ul>
+            <li class="current"><a href="index.html">首页</a></li>
+            <li><a href="#">团购</a></li>
+            <li><a href="#">电子竞技</a></li>
+            <li><a href="#">本地优选</a></li>
+            <li><a href="#">家电优选</a></li>
+        </ul>
+        <div class="category">
+            <div class="category_header">
+                全部分类<i class="icon_cate"></i>
+            </div>
+            <div class="category_body">
+                <div class="category_item">
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">手机</a><i></i>
+                        </h3>
+                        <i class="icon_phone"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">电脑</a><i></i>
+                        </h3>
+                        <i class="icon_com"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">DIY</a><i></i>
+                        </h3>
+                        <i class="icon_diy"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">数码</a><i></i>
+                        </h3>
+                        <i class="icon_cam"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">外设</a><i></i>
+                        </h3>
+                        <i class="icon_outer"></i>
+                    </div>
+                    <div class="category_item_hd">
+                        <h3>
+                            <a href="#">智能</a><i></i>
+                        </h3>
+                        <i class="icon_ai"></i>
+                    </div>
+                </div>
+                <ul class="category_content">
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">手机</a>
+                            <a href="#">移动电源</a>
+                            <a href="#">蓝牙耳机</a>
+                            <a href="#">手机贴膜</a>
+                            <a href="#">保护套</a>
+                            <a href="#">数据线</a>
+                            <a href="#">充电器</a>
+                            <a href="#">手机维修</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic1.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">笔记本电脑</a>
+                            <a href="#">游戏本</a>
+                            <a href="#">超极本</a>
+                            <a href="#">二合一平板电脑</a>
+                            <a href="#">平板电脑</a>
+                            <a href="#">品牌整机</a>
+                            <a href="#">一体机</a>
+                            <a href="#">笔记本配件</a>
+                            <a href="#">笔记本电池</a>
+                            <a href="#">笔记本包</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic2.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">DIY主机</a>
+                            <a href="#">团购钜惠</a>
+                            <a href="#">硬盘</a>
+                            <a href="#">电源</a>
+                            <a href="#">散热器</a>
+                            <a href="#">CPU</a>
+                            <a href="#">机箱</a>
+                            <a href="#">主板</a>
+                            <a href="#">内存</a>
+                            <a href="#">固态硬盘</a>
+                            <a href="#">显卡</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic3.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">数码相机</a>
+                            <a href="#">摄像机</a>
+                            <a href="#">相机镜头</a>
+                            <a href="#">相机电池</a>
+                            <a href="#">闪光灯</a>
+                            <a href="#">滤镜</a>
+                            <a href="#">电子教育</a>
+                            <a href="#">相机遥控器</a>
+                            <a href="#">拍立得</a>
+                            <a href="#">相机包</a>
+                            <a href="#">闪存卡</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic4.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">键盘</a>
+                            <a href="#">鼠标</a>
+                            <a href="#">鼠标套装</a>
+                            <a href="#">鼠标垫</a>
+                            <a href="#">耳机</a>
+                            <a href="#">音箱</a>
+                            <a href="#">投影仪</a>
+                            <a href="#">录音笔</a>
+                            <a href="#">路由器</a>
+                            <a href="#">移动硬盘</a>
+                            <a href="#">U盘</a>
+                            <a href="#">摄像头</a>
+                            <a href="#">手柄</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic5.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="categoryall">
+                        <div class="categoryall_itemlist">
+                            <a href="#">智能手环</a>
+                            <a href="#">智能手表</a>
+                            <a href="#">VR眼镜</a>
+                            <a href="#">健康检测</a>
+                            <a href="#">智能机器人</a>
+                            <a href="#">智能电子秤</a>
+                            <a href="#">智能灯</a>
+                            <a href="#">智能投影</a>
+                            <a href="#">HTC VIVE</a>
+                        </div>
+                        <div class="categoryall_banner">
+                            <a href="#">
+                                <img src="images/banner_pic6.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d_main">
+    <div class="d_position">
+        <div class="container">
+            <a href="index.html">首页</a>>
+            <a href="#">手机</a>>
+            <span>华为</span>
+        </div>
+    </div>
+    <div class="d_inner clear">
+        <div class="container clear">
+            <!--左边-->
+            <div class="d_details">
+                <!--图片-->
+                <div class="d_focus_img">
+                    <!--大图-->
+                    <div class="d_main_area">
+                        <a href="#">
+                            <img src="images/imgs/nova4/nova4_middle_pic1.jpg" alt="">
+                            <div class="big_pup">
+
+                            </div>
+                        </a>
+                    </div>
+                    <!--放大镜隐藏图片-->
+                    <div class="d_big_area">
+                        <div class="d_big_bg">
+                            <!--<div class="d_big_img">-->
+                                <img src="images/imgs/nova4/nova4_big_pic1.jpg" alt="">
+                            <!--</div>-->
+                            <!--<div></div>-->
+                        </div>
+                    </div>
+                    <!--小图片-->
+                    <div class="d_small_area">
+                        <div class="d_small_area_list clear">
+                            <ul class="clear">
+                                <!--<li class="active">-->
+                                    <!--<a href="#">-->
+                                        <!--<img src="images/imgs/nova4/nova4_small_pic1.jpg" alt="">-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#">-->
+                                        <!--<img src="images/imgs/nova4/nova4_small_pic2.jpg" alt="">-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#">-->
+                                        <!--<img src="images/imgs/nova4/nova4_small_pic3.jpg" alt="">-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#">-->
+                                        <!--<img src="images/imgs/nova4/nova4_small_pic4.jpg" alt="">-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#">-->
+                                        <!--<img src="images/imgs/nova4/nova4_small_pic5.jpg" alt="">-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!--关注分享商品-->
+                    <div class="d_action">
+                        <a href="#">
+                            <i></i>
+                            关注商品
+                        </a>
+                        <div class="d_share">
+                            <a href="#">
+                                <i></i>
+                                分享
+                            </a>
+                            <div class="d_share_list">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="d_tips">
+                        * 请勿私下交易，以免造成财物两空！
+                    </p>
+                </div>
+                <!--中间部分-->
+                <div class="d_deal_wrap">
+                    <!--商品标题-->
+                    <h3 class="d_main_title">
+                        <!--华为 nova 4（8G RAM/全网通/4800万超广角三摄标配版）-->
+                        <!--<span>麒麟970AI，6.4英寸极点全面屏，4800万超广角三摄</span>-->
+                    </h3>
+                    <!--商品价格-->
+                    <div class="d_price_panel">
+                        <p>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<i>￥</i><span></span></p>
+                    </div>
+                    <!--商品属性-->
+                    <div class="d_goodsinfo">
+                        <ul class="clear">
+                            <!--配送-->
+                            <li class="d_goodsinfo_send clear">
+                                <div class="d_goodsinfo_title">
+                                    配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;送：
+                                </div>
+                                <div class="d_goodsinfo_details clear">
+                                    <div class="d_goodsinfo_area" >
+                                        <input type="text" id="city" placeholder="地址">
+                                        <!--<i></i>-->
+                                    </div>
+                                    <p class="">可送达，<strong>快递包邮</strong></p>
+                                </div>
+                            </li>
+                            <!--服务保障-->
+                            <li class="d_goodsinfo_service clear">
+                                <div class="d_goodsinfo_title">
+                                    服务保障：
+                                </div>
+                                <div class="d_goodsinfo_details">
+                                    <p>由<a href="#">zol商城</a>发货并承诺提供以下服务保障</p>
+                                    <div class="d_goodsinfo_servicelist">
+                                        <a href="#"><i></i>正品保障</a>
+                                        <a href="#"><i></i>发货保障</a>
+                                        <a href="#"><i></i>无忧退换</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--商品颜色-->
+                            <li class="d_goodsinfo_color clear">
+                                <div class="d_goodsinfo_title">
+                                    商品颜色：
+                                </div>
+                                <div class="d_goodsinfo_details clear">
+                                    <ul class="clear">
+                                        <!--<li class="current" num="1" data-val="47">-->
+                                            <!--<span>贝母白<i></i></span>-->
+                                        <!--</li>-->
+                                        <!--<li num="1" data-val="45">-->
+                                            <!--<span>苏音蓝<i></i></span>-->
+                                        <!--</li>-->
+                                        <!--<li num="1" data-val="46">-->
+                                            <!--<span>亮黑色<i></i></span>-->
+                                        <!--</li>-->
+                                        <!--<li num="1" data-val="47">-->
+                                            <!--<span>蜜语红<i></i></span>-->
+                                        <!--</li>-->
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--内存容量-->
+                            <li class="d_goodsinfo_big clear">
+                                <div class="d_goodsinfo_title">
+                                    内存容量：
+                                </div>
+                                <div class="d_goodsinfo_details clear">
+                                    <ul class="clear">
+                                        <!--<li class="current" num="0" fn=""  data-val="22512">-->
+                                            <!--<span>行货128GB<i></i></span>-->
+                                        <!--</li>-->
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--购买方式-->
+                            <li class="d_goodsinfo_buystyle clear">
+                                <div class="d_goodsinfo_title">
+                                    购买方式：
+                                </div>
+                                <div class="d_goodsinfo_details clear">
+                                    <ul class="clear">
+                                        <!--<li class="current" num="2"  data-val="1">-->
+                                            <!--<span>非合约机<i></i></span>-->
+                                        <!--</li>-->
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--套装-->
+                            <li class="d_goodsinfo_suit clear">
+                                <div class="d_goodsinfo_title">
+                                    套&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;装：
+                                </div>
+                                <div class="d_goodsinfo_details clear">
+                                    <ul class="clear">
+                                        <!--<li class="current" num="3" data-val="1" >-->
+                                            <!--<span>官方标配<i></i></span>-->
+                                        <!--</li>-->
+                                    </ul>
+                                    <div class="d_goodsinfo_details_con">
+                                        9V2A Charge充电器，3.5mm耳机，9V2A Type-C数据线，TPU保护壳，TP保护膜
+                                    </div>
+                                </div>
+                            </li>
+                            <!--购买数量-->
+                            <li class="d_goodsinfo_count clear">
+                                <div class="d_goodsinfo_title">
+                                    购买数量：
+                                </div>
+                                <div class="d_goodsinfo_input">
+                                    <span class="d_goodsinfo_del" id="d_goodsinfo_del"></span>
+                                    <input name="d_goodsinfo_num" id="d_goodsinfo_num" type="text" value="1">
+                                    <span class="d_goodsinfo_add" id="d_goodsinfo_add"></span>
+                                </div>
+                            </li>
+                            <li class="d_goodsinfo_btngroup clear">
+                                <button id="btn_buy">立即购买</button>
+                                <button id="btn_addcart">加入购物车</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="d_store_info">
+                <div class="d_store_name">
+                    <h3><a href="#">佳佳手机网</a></h3>
+                </div>
+                <div class="d_modbox">
+                    <div class="d_modbox_hd">在线客服：</div>
+                    <ul class="d_custom_service">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="d_modbox clear">
+                    <ul class="d_contact_way clear">
+                        <li class="clear">
+                            <span class="d_modbox_label">客服电话：</span>
+                            <p>13099960777</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d_modbox clear">
+                    <ul class="d_contact_way clear">
+                        <li class="clear">
+                            <span class="d_modbox_label">接待时间：</span>
+                            <p>9:00-18:00</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d_modbox">
+                    <div class="d_modbox_hd">店铺动态评分：</div>
+                    <ul class="d_store_score">
+                        <li>
+                            描述:
+                            <em class="d_store_flat">0.0</em>
+                            <span class="d_store_flat"></span>同行
+                            0.00%
+                        </li>
+                        <li>
+                            服务:
+                            <em class="d_store_flat">0.0</em>
+                            <span class="d_store_flat"></span>同行
+                            0.00%
+                        </li>
+                        <li>
+                            物流:
+                            <em class="d_store_flat">0.0</em>
+                            <span class="d_store_flat"></span>同行
+                            0.00%
+                        </li>
+                    </ul>
+                </div>
+                <div class="d_collect_box">
+                    <a href="#" class="d_collectbtn">进入店铺</a>
+                    <a href="#" class="d_collectbtn">关注店铺</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d_shophot">
+        <div class="d_shophot_hd">
+            店铺热卖
+        </div>
+        <ul class="clear">
+            <li>
+                <a href="#">
+                    <img src="images/imgs/nova4/nova4_shophot_pic1.jpg" alt="">
+                    <span>苹果 iPhone XS Max（国际版/全网通）</span>
+                </a>
+                <div class="d_shophot_price">
+                    ￥<span>7990.00</span>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/imgs/nova4/nova4_shophot_pic2.jpg" alt="">
+                    <span>苹果 iPhone XS（国际版/全网通）</span>
+                </a>
+                <div class="d_shophot_price">
+                    ￥<span>7270.00</span>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/imgs/nova4/nova4_shophot_pic3.jpg" alt="">
+                    <span>苹果 iPhone XS（国际版/全网通）</span>
+                </a>
+                <div class="d_shophot_price">
+                    ￥<span>5199.00</span>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/imgs/nova4/nova4_shophot_pic4.jpg" alt="">
+                    <span>苹果 iPhone X（国际版/全网通）</span>
+                </a>
+                <div class="d_shophot_price">
+                    ￥<span>5730.00</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="d_wrapper clear">
+    <div class="container">
+        <!--左边开始-->
+        <div class="d_leftside clear">
+            <!--  搜索店内商品 -->
+            <div class="d_searchbox">
+                <div class="d_searchbox_hd">搜索店内商品</div>
+                <div class="d_searchgoods">
+                    <dl>
+                        <dt>商品名：</dt>
+                        <dd>
+                            <input type="text">
+                        </dd>
+                    </dl>
+                    <dl class="d_searchprice">
+                        <dt>价&nbsp;&nbsp;&nbsp;格：</dt>
+                        <dd>
+                            <input type="text" name="minPrice">
+                            <span>到</span>
+                            <input type="text" name="maxPrice">
+                        </dd>
+                    </dl>
+                    <input type="submit" value="搜索" id="leftSearchSubmit">
+                </div>
+            </div>
+            <!-- //搜索店内商品 -->
+
+            <!-- 商品分类 -->
+            <div class="d_catagoods">
+                <h2 class="d_catagoods_hd">商品分类</h2>
+                <div class="d_goods_category" id="goods-category-list">
+                    <dl class="d_all_goods">
+                        <dt>
+                            <a href="#">查看全部商品</a>
+                        </dt>
+                        <dd>
+                            <a href="#">按关注</a>
+                            <a href="#">按价格</a>
+                            <a href="#">按时间</a>
+                        </dd>
+                    </dl>
+                    <dl class="d_phones-category">
+                        <dt><h3>手机</h3></dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">荣耀</a></li>
+                                <li><a href="#">华为</a></li>
+                                <li><a href="#">Apple（苹果）</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //商品分类 -->
+
+            <!-- 排行榜切换 -->
+            <div class="d_ranklist">
+                <div class="d_ranklist_hd">宝贝排行榜</div>
+                <ul class="d_ranklist_tab clear">
+                    <li>人气TOP5</li>
+                </ul>
+                <ul class="d_ranklist_con clear">
+                    <li>
+                        <a href="#" title="荣耀 Note10（6G+128G/全网通）">
+                            <img src="https://mercrt-fd.zol-img.com.cn/t_s60x60/g5/M00/00/02/ChMkJ1wx3tGIVKoZAAFZ2eSRZgEAAuOmANspNUAAVnx373.jpg">
+                        </a>
+                        <div class="d_ranklist_title">
+                            <a href="#" title="荣耀 Note10（6G+128G/全网通）">荣耀 Note10（6G+128G/全网通）</a>
+                        </div>
+                        <span class="d_ranklist_price">&yen;2450</span>
+                        <span class="d_ranklist_salenumber">已售出<em>1</em>笔</span>
+                    </li>
+                    <li>
+                        <a href="#" title="华为 畅享8（4GB RAM/全网通）">
+                            <img src="https://mercrt-fd.zol-img.com.cn/t_s60x60/g5/M00/0E/09/ChMkJlwsrIeIXmL_AAEyMt0mMGwAAuIbAPusDgAATJK244.jpg">
+                        </a>
+                        <div class="d_ranklist_title">
+                            <a href="#" title="华为 畅享8（4GB RAM/全网通）">华为 畅享8（4GB RAM/全网通）</a>
+                        </div>
+                        <span class="d_ranklist_price">&yen;1120</span>
+                        <span class="d_ranklist_salenumber">已售出<em>0</em>笔</span>
+                    </li>
+                    <li>
+                        <a href="#" title="华为 畅享9（4GB RAM/全网通）">
+                            <img src="https://mercrt-fd.zol-img.com.cn/t_s60x60/g5/M00/0F/0E/ChMkJlwwp1-IQPWsAAEMGXRsnLoAAuNrwEpCoMAAQwx701.jpg">
+                        </a>
+                        <div class="d_ranklist_title">
+                            <a target="_blank" href="#" title="华为 畅享9（4GB RAM/全网通）">华为 畅享9（4GB RAM/全网通）</a>
+                        </div>
+                        <span class="d_ranklist_price">&yen;1320</span>
+                        <span class="d_ranklist_salenumber">已售出<em>0</em>笔</span>
+                    </li>
+                    <li>
+                        <a href="#" title="华为 nova 3i（4GB RAM/全网通）">
+                            <img src="https://mercrt-fd.zol-img.com.cn/t_s60x60/g5/M00/0F/0E/ChMkJ1wwu4WIKE_kAAEmaZ4G-MQAAuNwQFElz4AASaB716.jpg">
+                        </a>
+                        <div class="d_ranklist_title">
+                            <a target="_blank" href="#" title="华为 nova 3i（4GB RAM/全网通）">华为 nova 3i（4GB RAM/全网通）</a>
+                        </div>
+                        <span class="d_ranklist_price">&yen;1670</span>
+                        <span class="d_ranklist_salenumber">已售出<em>0</em>笔</span>
+                    </li>
+                    <li>
+                        <a href="#" title="华为 nova 3（6G RAM/全网通）">
+                            <img border="0" src="https://mercrt-fd.zol-img.com.cn/t_s60x60/g5/M00/0F/0E/ChMkJlwwtzaIB4GwAAFIwQCm75EAAuNvgGDaJEAAUjZ601.jpg">
+                        </a>
+                        <div class="d_ranklist_title">
+                            <a href="#" title="华为 nova 3（6G RAM/全网通）">华为 nova 3（6G RAM/全网通）</a>
+                        </div>
+                        <span class="d_ranklist_price">&yen;2320</span>
+                        <span class="d_ranklist_salenumber">已售出<em>0</em>笔</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- //排行榜切换 -->
+        </div>
+        <!--左边结束-->
+
+        <!--中间-->
+        <div class="d_gmain">
+            <div  id="d_gmain_tabbar">
+                <ul>
+                    <li class="current">
+                        <a href="#">商品详情</a>
+                    </li>
+                    <li>
+                        <a href="#">参数</a>
+                    </li>
+                    <li>
+                        <a href="#">购买评价
+                            <em>0</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">成交记录
+                            <em>0</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">购买咨询</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span></span>服务承诺
+                        </a>
+                    </li>
+                    <li>
+                        <div class="d_phone_purchase">
+                            <a href="#">手机购买<i></i></a>
+                            <div>
+                                <img src="http://qr.fd.zol-img.com.cn/qrcode/qrcodegen.php?&sizeNum=2&url=http%3A%2F%2Fm.zol.com%2Fshop_201344%2F32151389.html&token=7935e8d921" width="91" height="91">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d_gmain_buybtn">
+                        <span id="d_nav_buynow">立即购买</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="d_maincontainer">
+                <!--商品详情start-->
+                <div class="d_gmain_goodslist active">
+                    <div class="d_attributes_list">
+                        <span>官方标配：</span>
+                        手机 x 1 2）电池（内置）x 1 3）快速指南 x 1； 4）9V2A Charge充电器 x 1； 5）三包凭证 x 1； 6）3.5mm耳机 x 1； 7）9V2A Ty
+                    </div>
+                    <div class="d_service_title">
+                        <span class="title">商品介绍</span>
+                        <span class="english-title">Products</span>
+                    </div>
+                    <div class="d_service_content">
+                        <p><img src="https://mercrt-fd.zol-img.com.cn/t_s860x860/g5/M00/0A/0B/ChMkJ1tEZ4iITu1bAAEG8w3Ado0AAplPAM32UkAAQcL819.jpg" alt=""></p>
+                        <p><img src="https://mercrt-fd.zol-img.com.cn/t_s860x860/g5/M00/0B/08/ChMkJluy81eIKt6dAAFQn8kcaIAAAsO9gPE-vcAAVC3595.jpg" alt=""></p>
+                        <p><img src="https://mercrt-fd.zol-img.com.cn/t_s860x860/g5/M00/08/02/ChMkJ1upzyuINh2zAAEomFQhANYAAsBZgE_jV4AASiw296.jpg" alt=""></p>
+                        <p><img src="https://mercrt-fd.zol-img.com.cn/t_s860x860/g5/M00/0B/08/ChMkJluy9x6INJzlAAEue1hzeTwAAsO-gDUpTkAAS6T790.jpg" alt=""></p>
+                        <p><img src="https://img.alicdn.com/imgextra/i1/1800399917/TB2Gv9WEeSSBuNjy0FlXXbBpVXa-1800399917.jpg" alt=""></p>
+                        <p><img src="https://img.alicdn.com/imgextra/i2/1800399917/TB2RdW_EY5YBuNjSspoXXbeNFXa-1800399917.jpg" alt=""></p>
+                        <p><img src="http://i3.mercrt.fd.zol-img.com.cn/t_s860x860/g5/M00/03/0F/ChMkJ1ixS06IcszLAAD-ZlZ6MTcAAaMNwHQoScAAP5-009.jpg" alt=""></p>
+                    </div>
+                </div>
+                <!--商品详情end-->
+                <!--参数start-->
+                <div class="d_parameter">
+                    <table width="100%">
+                        <tr>
+                            <th colspan="2">基本参数</th>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">上市日期</td>
+                            <td class="zs-parameter-infor">2018年07月</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">手机类型</td>
+                            <td class="zs-parameter-infor">4G手机，3G手机，智能手机，平板手机，拍照手机，快充手机</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">操作系统</td>
+                            <td class="zs-parameter-infor">EMUI 8.2（基于Android 8.1）</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">屏幕</th>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">触摸屏类型</td>
+                            <td class="zs-parameter-infor">电容屏，多点触控</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">主屏尺寸</td>
+                            <td class="zs-parameter-infor">6.3英寸</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">主屏材质</td>
+                            <td class="zs-parameter-infor">TFT材质（IPS技术）</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">主屏分辨率</td>
+                            <td class="zs-parameter-infor">2340x1080像素</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">屏幕像素密度</td>
+                            <td class="zs-parameter-infor">409ppi</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">窄边框</td>
+                            <td class="zs-parameter-infor">3.32mm</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">屏幕占比</td>
+                            <td class="zs-parameter-infor">84.21%</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">其他屏幕参数</td>
+                            <td class="zs-parameter-infor">全面屏（19.5:9），屏幕色彩：1670万色，色彩饱和度（NTSC）：85%（典型值）</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">硬件</th>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">CPU型号</td>
+                            <td class="zs-parameter-infor">海思 Kirin 970</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">CPU频率</td>
+                            <td class="zs-parameter-infor">2.36GHz（大四核），1.8GHz（小四核）+微智核i7</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">核心数</td>
+                            <td class="zs-parameter-infor">八核</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">GPU型号</td>
+                            <td class="zs-parameter-infor">Mali G72 MP12</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">RAM容量</td>
+                            <td class="zs-parameter-infor">6GB</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">ROM容量</td>
+                            <td class="zs-parameter-infor">64GB/128GB</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">存储卡</td>
+                            <td class="zs-parameter-infor">MicroSD卡</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">扩展容量</td>
+                            <td class="zs-parameter-infor">256GB</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">电池类型</td>
+                            <td class="zs-parameter-infor">不可拆卸式电池</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">电池容量</td>
+                            <td class="zs-parameter-infor">3750mAh</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">电池充电</td>
+                            <td class="zs-parameter-infor">快速充电（9V/2A），充电时间：2小时</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">其他硬件参数</td>
+                            <td class="zs-parameter-infor">GPU Turbo</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">网络与连接</th>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">4G网络</td>
+                            <td class="zs-parameter-infor">移动TD-LTE，联通TD-LTE，联通FDD-LTE，电信TD-LTE，电信FDD-LTE</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">3G网络</td>
+                            <td class="zs-parameter-infor">移动3G（TD-SCDMA），联通3G（WCDMA），电信3G（CDMA2000），联通2G/移动2G（GSM）</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">SIM卡类型</td>
+                            <td class="zs-parameter-infor">双卡，Nano SIM卡</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">WLAN功能</td>
+                            <td class="zs-parameter-infor">WIFI</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">导航</td>
+                            <td class="zs-parameter-infor">GPS导航，GLONASS导航，北斗导航</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">连接与共享</td>
+                            <td class="zs-parameter-infor">WLAN热点，蓝牙4.2，支持BLE，aptX，aptX HD高清音频，HWA</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">机身接口</td>
+                            <td class="zs-parameter-infor">3.5mm耳机接口，USB Type-C接口</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">摄像头</th>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">摄像头总数</td>
+                            <td class="zs-parameter-infor">四摄像头</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">后置摄像头</td>
+                            <td class="zs-parameter-infor">彩色1600万像素+黑白2400万像素</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">前置摄像头</td>
+                            <td class="zs-parameter-infor">彩色2400万像素+彩色200万像素</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">传感器类型</td>
+                            <td class="zs-parameter-infor">CMOS</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">闪光灯</td>
+                            <td class="zs-parameter-infor">LED补光灯</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">光圈</td>
+                            <td class="zs-parameter-infor">后置f/1.8，前置f/2.0</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">视频拍摄</td>
+                            <td class="zs-parameter-infor">后置：4K（3840x2160，30帧/秒）视频录制 <br />前置：1080p（1920×1080，30帧/秒）视频录制</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">拍照功能</td>
+                            <td class="zs-parameter-infor">后置：数字变焦，双摄变焦，深度对焦，相位对焦，反差对焦<br />前置：数字变焦，固定焦距<br />AI美拍，大光圈拍照，动态照片，专业拍照，录像，乐趣AR，专业录像，3D动态全景，黑白相机，HDR，夜景，全景照，流光快门，延时摄影，慢动作，滤镜，水印，文档校正，人像模式，电影人像模式，大光圈录像，智能场景识别，定时拍照，声控拍照，笑脸抓拍，熄屏快拍等需用户下载支持功能：水印，智能识物，美食，文档校正</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">其他摄像头参数</td>
+                            <td class="zs-parameter-infor">照片分辨率：<br />后置：5632×4224像素<br />前置：5632×4224像素</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">外观</th>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">造型设计</td>
+                            <td class="zs-parameter-infor">直板</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">机身颜色</td>
+                            <td class="zs-parameter-infor">亮黑色，浅艾蓝，蓝楹紫，樱草金，相思红</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">手机尺寸</td>
+                            <td class="zs-parameter-infor">157x73.7x7.3mm</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">手机重量</td>
+                            <td class="zs-parameter-infor">166g</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">机身材质</td>
+                            <td class="zs-parameter-infor">3D双曲面玻璃机身</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">指纹识别设计</td>
+                            <td class="zs-parameter-infor">后置指纹识别</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">功能与服务</th>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">感应器类型</td>
+                            <td class="zs-parameter-infor">重力感应器，光线传感器，距离传感器，指纹识别，陀螺仪，指南针</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">音频支持</td>
+                            <td class="zs-parameter-infor">支持MIDI/MP3/AAC等格式</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">视频支持</td>
+                            <td class="zs-parameter-infor">支持3GP/MP4等格式</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">图片支持</td>
+                            <td class="zs-parameter-infor">支持JPEG/GIF等格式</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">多媒体技术</td>
+                            <td class="zs-parameter-infor">Histen5.0音效</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">常用功能</td>
+                            <td class="zs-parameter-infor">手电筒，镜子，日历，图库，音乐，视频，计算器，备忘录，录音机，天气，时钟，文件管理，手机管家，学生模式，驾驶模式</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">商务功能</td>
+                            <td class="zs-parameter-infor">飞行模式</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">服务特色</td>
+                            <td class="zs-parameter-infor">人脸解锁，Huawei Share，支付保护中心，天际通，运动健康，单手操作，杂志锁屏，玩机技巧</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">手机附件</th>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">包装清单</td>
+                            <td class="zs-parameter-infor">主机&nbsp;x1<br />3.5mm耳机&nbsp;x1<br />TPU保护壳&nbsp;x1<br />卡座捅针&nbsp;x1<br />三包凭证&nbsp;x1<br />快速指南&nbsp;x1<br />9V2A Charge充电器&nbsp;x1<br />9V2A Type-C数据线&nbsp;x1<br />TP保护膜（出厂已贴在手机上）&nbsp;x1</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">保修信息</th>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">保修政策</td>
+                            <td class="zs-parameter-infor">全国联保，享受三包服务</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">质保时间</td>
+                            <td class="zs-parameter-infor">1年</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">质保备注</td>
+                            <td class="zs-parameter-infor">主机1年，电池1年，充电器1年</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">电话备注</td>
+                            <td class="zs-parameter-infor">周一至周日：8:00-20:00</td>
+                        </tr>
+                        <tr>
+                            <td class="zs-parameter-title">详细内容</td>
+                            <td class="zs-parameter-infor">自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7日内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！注：单独购买手机配件产品的用户，请完好保存配件外包装以及发票原件，如无法提供上述凭证的，将无法进行正常的配件保修或更换。</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--参数结束end-->
+                <!--购买评价start-->
+                <div class="d_comment">
+                    <!-- 购买评价 -->
+                    <div class="d_details_head clear">
+                        <div class="d_comment_goodsrate clear">
+                            <div class="d_goods_num"><em><b>100</b>%</em>好评率</div>
+                            <ul class="d_goods_num_list clear">
+                                <li>
+                                    <div class="d_comment_rate">
+                                        <div class="d_rate_num">100%</div>
+                                            <div class="bg left"></div>
+                                            <div class="bg right"></div>
+                                    </div>
+                                    <div class="nums"><em>好评</em>（30人）</div>
+                                </li>
+                                <li>
+                                    <div class="d_comment_rate">
+                                        <div class="d_rate_num">0%</div>
+                                        <!--<div class="bg left"></div>-->
+                                        <!--<div class="bg right"></div>-->
+                                    </div>
+                                    <div class="nums"><em>中评</em>（0人）</div>
+                                </li>
+                                <li>
+                                    <div class="d_comment_rate">
+                                        <div class="d_rate_num">0%</div>
+                                        <div class="front"></div>
+                                        <!--<div class="bg left"></div>-->
+                                        <!--<div class="bg right"></div>-->
+                                    </div>
+                                    <div class="nums"><em>差评</em>（0人）</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d_comment_filter">
+                            <span class="current"><input type="radio" value="4" name="order-review" checked="checked">全部评价 (30)</span>
+                            <span><input type="radio" value="5" name="order-review">晒图 (0)</span>
+                            <span><input type="radio" value="1" name="order-review">好评 (30)</span>
+                            <span><input type="radio" value="2" name="order-review">中评 (0)</span>
+                            <span><input type="radio" value="3" name="order-review">差评 (0)</span>
+                        </div>
+                    </div>
+                    <div class="intro_cont">
+                        <!--<div id="review_list">-->
+                            <!--<div class="zs-no-comment-prompt">新品上架，暂未有人评价过，<a href="#top">返回顶部</a>看看商品怎么样</div>-->
+                        <!--</div>-->
+                        <div class="review_list">
+                            <div class="comment-content">
+                                <div class="comment-item">
+                                    <div class="comment-author">
+                                        <span class="comment-star">
+                                            <em></em>
+                                        </span>
+                                        <div class="author">
+                                            <img src="https://icon.zol-img.com.cn/group/detail_images/zoler.jpg" alt="">
+                                            <span class="name">zo***08</span>
+                                            <span class="city">来自郑州</span>
+                                        </div>
+                                    </div>
+                                    <p class="comment-text">正品</p>
+                                    <div class="comment-time">
+                                        <span>2018-11-16 17:12</span>
+                                        <span>星耀版 樱草金</span>
+                                        <span>官方标配</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-item">
+                                    <div class="comment-author">
+                                        <span class="comment-star">
+                                            <em></em>
+                                        </span>
+                                        <div class="author">
+                                            <img src="https://icon.zol-img.com.cn/group/detail_images/zoler.jpg" alt="">
+                                            <span class="name">zo***08</span>
+                                            <span class="city">来自郑州</span>
+                                        </div>
+                                    </div>
+                                    <p class="comment-text">正品</p>
+                                    <div class="comment-time">
+                                        <span>2018-11-16 17:12</span>
+                                        <span>星耀版 樱草金</span>
+                                        <span>官方标配</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //评价 end -->
+                </div>
+                <!--购买评价end-->
+                <!--成交记录start-->
+                <div class="d_successrecord">
+                    成交记录start
+                </div>
+                <!--成交记录end-->
+                <!--购买咨询start-->
+                <div class="d_message">
+                    <div class="detail-head">
+                        <div class="title">
+                            <h4 id="messageNumTitle">留言咨询(0)</h4>
+                        </div>
+                        <div class="detail-head-filter clear">
+                            <div class="checks">
+                                <label class="cur"><input type="radio" checked value="10" name="wordsKey">全部咨询</label>
+                                <label><input type="radio" value="1" name="wordsKey">商品咨询</label>
+                                <label><input type="radio" value="2" name="wordsKey">库存与配送</label>
+                                <label><input type="radio" value="3" name="wordsKey">支付问题</label>
+                                <label><input type="radio" value="4" name="wordsKey">发票与保修</label>
+                                <label><input type="radio" value="5" name="wordsKey">促销及赠品</label>
+                                <label><input type="radio" value="6" name="wordsKey">其他</label>
+                            </div>
+                            <a href="#" class="ask-link">我要咨询</a>
+                        </div>
+                    </div>
+                    <ul class="ask-list" id="zp-message-list">
+                        <div class="zs-no-comment-prompt">暂无咨询记录，有问题可以在下面留言给商家</div>
+                    </ul>
+                    <div class="zs-enter-message" id="zp-enter-message">
+                        <div class="detail-head">
+                            <div class="title"><h4>发表咨询</h4><span class="close"></span></div>
+                            <div class="detail-head-filter clearfix">
+                                <div class="checks">
+                                    <label class="cur" ><input type="radio" value="1" name="saveWordsKey" checked="">商品咨询</label>
+                                    <label><input value="2" name="saveWordsKey" type="radio">库存与配送</label>
+                                    <label><input value="3" name="saveWordsKey" type="radio">支付问题</label>
+                                    <label><input value="4" name="saveWordsKey" type="radio">发票及保修</label>
+                                    <label><input value="5" name="saveWordsKey" type="radio">促销及赠品</label>
+                                    <label><input value="6" name="saveWordsKey" type="radio">其它</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zs-messagebox">
+                            <textarea name="zs-goods-message-content" id="zp-goods-message-content"></textarea>
+                            <div class="zs-question-foot clearfix" id="message-button">
+                                <label><input name="zp-goods-message-show" type="checkbox" value="1">仅商家可见</label>
+                                <span id="submit-content">（选择后，您的留言只有商家可以看到，建议您在询问价格等隐私信息时选择）</span>
+                                <span class="zs-number" id="limtset"><em>0</em>/200</span>
+                                <a href="javascript:void(0)" class="zs-publish-btn" onclick="$.saveGoodsMessage({goodsId: '31792212', merchantId: '200827', goodsName: '华为 nova 3（全网通）'})">发表留言</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--购买咨询end-->
+                <!--服务承诺start-->
+                <div class="d_promise">
+                    <div class="zbz-sevice-banner">Z<span class="add-plus">+</span> 服务保障说明</div>
+                    <h4 class="zbz-sevice-title" id="quality"><i class="ico-13"></i>正品保障</h4>
+                    <div class="zbz-service-content">
+                        <p>当您在ZOL商城购买全新产品时，商家承诺所售出商品均为正品行货，如买家所购商品发现假货及非原厂正品商品，买家可以向ZOL商城发起"先行赔付"申请，ZOL商城核实后将进行先行赔付以保障您的合法权益。</p>
+                    </div>
+
+                    <h4 class="zbz-sevice-title" id="peifu"><i class="ico-1"></i>先行赔付</h4>
+                    <div class="zbz-service-content">
+                        <dl>
+                            <dt>1、先行赔付规则：</dt>
+                            <dd>当您在ZOL商城购买全新产品时，若因该交易导致您的权益受损，且在您直接要求商家处理未果的情况下，您可以向ZOL商城发起"先行赔付"申请，ZOL商城核实后将进行先行赔付以保障您的合法权益。</dd>
+                        </dl>
+                        <dl>
+                            <dt>2、先行赔付条件：</dt>
+                            <dd>1、只有您在ZOL商城购买并且有购买凭据（购买凭据包括：电子订单、购货发票等）的商品可申请先行赔付；<br/>2、确保申请赔付的商品必须与卖家销售的商品为同一件；<br/><span style="color:#c00;">注：买家不按照ZOL商城的交易流程而完成的交易不在"先行赔付"保障范围内；</span><br/>1）	未收到货情况下，买家提前确认收货的交易；<br/>2）	未在ZOL商城提交订单，擅自与卖家在线下付款完成的交易；</dd>
+                        </dl>
+                        <dl>
+                            <dt>3、先行赔付流程：</dt>
+                            <dd> <img src="http://icon.zol-img.com.cn/newshop/shop/detail/youdian/img-3.png" width="650" height="77"> </dd>
+                        </dl>
+                        <dl>
+                            <dt>4、先行赔付受理时间：</dt>
+                            <dd>买家向ZOL商城申请"先行赔付"服务，需严格按照受理时限进行申请，超时商城将不与受理，并且不承担任何责任。</dd>
+                        </dl>
+                    </div>
+                </div>
+                <!--服务承诺end-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_wrapper">
+        <div class="container">
+            <ul class="footer_service">
+                <li class="footer_service_bg1">
+                    <a href="#">
+                        <p class="top">先行赔付</p>
+                        <p class="below">权益受损先行赔付</p>
+                    </a>
+                </li>
+                <li class="footer_service_bg2">
+                    <a href="#">
+                        <p class="top">正品保障</p>
+                        <p class="below">正规渠道售后有保障</p>
+                    </a>
+                </li>
+                <li class="footer_service_bg3">
+                    <a href="#">
+                        <p class="top">无忧退换</p>
+                        <p class="below">严格按照消法处理</p>
+                    </a>
+                </li>
+                <li class="footer_service_bg4">
+                    <a href="#">
+                        <p class="top">发票保障</p>
+                        <p class="below">售卖商品可提供发票</p>
+                    </a>
+                </li>
+                <li class="footer_service_bg5">
+                    <a href="#">
+                        <p class="top">快递包邮</p>
+                        <p class="below">满399快递包邮</p>
+                    </a>
+                </li>
+                <li class="footer_service_b6">
+                    <a href="#">
+                        <p class="top">急速发货</p>
+                        <p class="below">24小时内发货</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer_menu">
+                <dl class="cooperation">
+                    <dt>招商合作</dt>
+                    <dd>
+                        <p>助力3C零售商互联网转型</p>
+                        <p>开启新零售时代全新旅程！</p>
+                        <a href="#"><span>查看详细</span>&gt;</a>
+                    </dd>
+                </dl>
+                <dl class="hotline">
+                    <dt>400-688-1999</dt>
+                    <dd>
+                        <p>工作日 9:00 - 18:00</p>
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="#">帐号管理</a>
+                        <a href="#">购物帮助</a>
+                        <a href="#">付款方式</a>
+
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="#">先行赔付</a>
+                        <a href="#">退款退货流程</a>
+                        <a href="#">投诉举报</a>
+                        <a href="#">退款、售后</a>
+
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>商城保障</dt>
+                    <dd>
+                        <a href="#">正品保障</a>
+                        <a href="#">物流配送</a>
+                        <a href="#">24小时发货</a>
+                        <a href="#">发票保障</a>
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>商家服务</dt>
+                    <dd>
+                        <a href="#">商家中心</a>
+
+                    </dd>
+                </dl>
+                <dl class="footer_menu_commom">
+                    <dt>管理条例</dt>
+                    <dd>
+                        <a href="#">Z商城管理条例</a>
+                        <a href="#">Z商城投诉处理规范</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="footer_list">
+        <div class="container">
+            <div class="footer_nav">
+                <a href="#">中关村在线</a> |
+                <a href="#">Z商城</a> |
+                <a href="#">团购</a> |
+                <a href="#">产品报价</a> |
+                <a href="#">论坛</a> |
+                <a href="#">问答</a>
+            </div>
+            <div class="footer_copyright">
+                <a href="#">关于Z商城</a> |
+                <a href="#">帮助中心</a> |
+                <a href="#">联系我们</a> |
+                <a href="#" id="credit-icon">
+                    <img src="images/gs.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="footer_copyright" style="margin-left: -5px">
+                &copy;2019 中关村在线 版权所有.
+                <a href="#">京ICP证150096号</a>京ICP备14061128号
+                <a href="#">网络文化经营许可证京网文[2016]1631-199</a>
+            </div>
+            <div class="footer_area">
+                <div class="wechat">
+                    <img src="images/qr.png"  alt=""/>
+                </div>
+                <a href="#">关注新浪微博</a>
+            </div>
+            <a href="#">广告</a>
+        </div>
+    </div>
+</div>
+<div class="sidebar">
+    <div class="sidebar_top">
+        <ul>
+            <li class="sidebar_myorder">
+                <div class="icon_img">
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+                <div class="hiddenblock">
+                    <a href="#">我的订单</a>
+                </div>
+            </li>
+            <li class="sidebar_myfooter">
+                <div class="icon_img">
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+                <div class="hiddenblock">
+                    <a href="#">我的足迹</a>
+                </div>
+            </li>
+            <li class="sidebar_mycart">
+                <div class="icon_img">
+                    <span class="cartnum">0</span>
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+                <div class="hiddenblock">
+                    <a href="cart.html">购物车</a>
+                </div>
+            </li>
+            <li class="sidebar_mydiscount">
+                <div class="icon_img">
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+                <div class="hiddenblock">
+                    <a href="#">优惠券</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar_back">
+
+    </div>
+</div>
+</body>
+</html>
